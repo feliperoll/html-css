@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video src="midia/Meu-Video.webm.webm" width="300" controls></video>
+    <!--da mesma forma de música, está é a forma mais simples, abaixo a melhor forma-->
+
+    <video width="250" poster="imagens/Argentina.JPG" controls autoplay loop>
+        <!-- o poster serve para adicionar thumb no inicio do vídeo -->
+        <source src="midia/Meu-Video.m4v.m4v" type="video/m4v">
+        <source src="midia/Meu-Video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogg">
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <p>Se o navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <!--A ordem de cima para baixo é a ordem que o navegador tentará abrir os vídeos, por isso coloque do mais leve ao mais pesado e a mensagem no parágrafo só sera exibida se o navegador não tiver compatibilidade com reprodução de vídeos-->
+    </video>
+
+<h1>Inserindo vídeos do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DIraePpIAog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Desta forma não irá consumir dados do seu servidor e sim do youtube, para o cliente fica mais barato, então é bom você ou seu cliente criar um canal e subir os vídeos no youtube -->
+<!-- Para pegar o código, vá no youtube, clique em compartilar e depois em incorporar e o youtube irá disponibilizar o código pronto-->
+</head>
+<body>
+    
+</body>
+</html>
